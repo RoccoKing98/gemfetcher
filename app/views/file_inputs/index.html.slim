@@ -1,0 +1,8 @@
+.w-full
+  - if notice.present?
+    #notice.p.py-2 px-3.bg-green-50.mb-5.text-green-500font-medium rounded-lg inline-block
+
+  = form_tag file_inputs_path(id: 1), method: :post do
+    = text_area_tag :gemfile_content, nil, rows: 10, cols: 80
+    p
+      = submit_tag 'Process Gemfile'

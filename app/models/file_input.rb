@@ -1,0 +1,2 @@
+class FileInput < ApplicationRecord
+end
